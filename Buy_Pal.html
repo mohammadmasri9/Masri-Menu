@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Pal_Shein</title>
+
+  <style>
+    body {
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 25px;
+      box-shadow: #2f7a793a;
+      position: fixed;
+      width: 100%;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      color:   #2F8F9D;
+      font-size: 20px;
+    }
+
+    .logo p {
+      margin: 0;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: cursive;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 10px;
+      display: flex;
+      padding-left: 35%;
+      font-size: 18px;
+    }
+
+    .navbar ul li {
+      margin-right: 30px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #2f7a79;
+      font-weight: bolder;
+    }
+
+    .navbar button {
+      background-color: #2F8F9D;
+      color: #fff;
+      border: none;
+      width: 80px;
+      height: 40px;
+      border-radius: 10%;
+      font-size: 15px;
+    }
+
+    .box2-button {
+      padding-left: 30%;
+    }
+
+   
+
+    #banner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      background-image: url();
+      background-size: cover;
+      padding: 100px 20px;
+      height: 200px;
+    }
+
+    .box1 h1 {
+      font-size: 70px; 
+      font-family: cursive;
+      color: #2F8F9D;
+    }
+
+    .box1 p {
+      font-size: 25px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: rgba(0, 0, 0, 0.669);
+    }
+
+    .box1 button {
+      background-color: #2F8F9D;
+      color: #fff;
+      border: none;
+      width: 200px;
+      height: 40px;
+      border-radius: 5%;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-left: 25px;
+    }
+
+    .box1 button:hover {
+      background-color: #3BACB6;
+    }
+
+    footer {
+      background-color: #2F8F9D;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+      font-size: large;
+      margin-top: 30%;
+    }
+
+    .footer-logos i {
+      margin: 0 10px;
+      font-size: 30px;
+      color: #ffffff;
+    }
+
+    .footer-logos a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .box11 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  font-size: large;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+#order {
+  width: 200px; 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  
+}
+
+#order option {
+  padding: 8px;
+}
+.Box12{
+    display: flex;
+    flex-direction: column;
+}
+.Box3 div {
+        margin: 20px;
+        padding: 10px;
+        background-color: #eaeaea;
+        border: 1px solid #ccc;
+    }
+
+   .Box3 p {
+        margin: 10px 0;
+        padding: 5px;
+        font-size: larger;
+        font-family: fantasy;
+        color: #2f7a79;
+        
+    }
+
+        
+  </style>
+
+
+<script>
+
+function myFunction() {
+    let name1 = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    
+    let address = document.getElementById('address').value;
+  
+  
+ 
+  
+    
+    document.getElementById("demo2").innerHTML = "Name: " + name1;
+    document.getElementById("demo3").innerHTML = "Email: " + email;
+    document.getElementById("demo4").innerHTML = "Phone: " + phone;
+    document.getElementById("demo5").innerHTML = "Address: " + address;
+  
+  }
+  
+
+</script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <span class="logo">
+        <i class="fa-brands fa-shopify fa-beat fa-lg"></i>
+        <p>Pal_Shein</p>
+      </span>
+      <ul>
+        <li><a href="Pal_Home.html">Home</a></li>
+        <li><a href="Product_Pal.html">Products</a></li>
+        <li><a href="Contact_Pal.html">Contact</a></li>
+      </ul>
+      <span class="box2-button">
+        <a href="Buy_Pal_Arabic.html"> <button class="Buy-button">Arabic</button></a>
+       
+      </span>
+    </div>
+  </header>
+
+  <section id="banner">
+    <div class="Box12">
+    <div class="box1">
+      <h1>Pal_Shein</h1>
+      <label >Name:</label>
+      <input type="text" id="name" required>
+      
+      <label >Email:</label>
+      <input type="email" id="email" required>
+      
+      <label >Phone:</label>
+      <input type="tel" id="phone" required>
+
+      <label >Shipng Address:</label>
+      <input type="text" id="address" required>
+
+      <label > Chose the Item Feild :</label>
+      <select  id="order" >
+    <option value="Clothes">Clothes</option>
+    <option value="Accessories">Accessories</option>
+    <option value="Electronics">Electronics</option> 
+  
+      </select>
+
+      <label > Chose the Item Number:</label>
+      <select  id="order" >
+    <option value="Item 1">Item 1</option>
+    <option value="Item 2">Item 2</option>
+    <option value="Item 3">Item 3</option> 
+    <option value="Item 4">Item 4</option>
+    <option value="Item 5">Item 5</option>
+    <option value="Item 6">Item 6</option>
+      </select><br><br>
+      
+      <button id="submit" onclick="myFunction()">Submit Info &circlearrowleft;</button>
+     
+     <a href="payVisa_Pal.html"> <button>Place Order</button></a>
+
+    </div>
+    <div class="Box3">
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+
+    </div>
+    </div>
+    <div class="box2">
+      <img src="https://img.freepik.com/free-vector/seasonal-sale-discounts-presents-purchase-visiting-boutiques-luxury-shopping-price-reduction-promotional-coupons-special-holiday-offers-vector-isolated-concept-metaphor-illustration_335657-2766.jpg?w=740&t=st=1685551340~exp=1685551940~hmac=f45ddad4ae7a6c5260381a7b2dcc03c2004522d9b4a60cdadf256efc9115f232" alt="">
+    </div>
+  </section><br><br><br><br>
+
+  <footer>
+    <div class="footer-logos">
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Pal_Shein - All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
